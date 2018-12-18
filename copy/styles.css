@@ -1,0 +1,31 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+/* landing page  */
+/* BEM */
+/* block  element   modifier */
+.container__landing-page {
+  background-image: url("./images/intro-bg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container__landing-page--overlay {
+  background: rgb(18, 18, 18);
+  opacity: 0.85;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.title__container {
+  z-index: 1;
+  color: #eee;
+  text-align: center;
+}
