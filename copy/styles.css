@@ -9,6 +9,8 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+/* nav bar */
+
 /* landing page  */
 /* BEM */
 /* block  element   modifier */
@@ -19,9 +21,9 @@ html {
   background-size: cover;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .container__landing-page--overlay {
   background: rgb(18, 18, 18);
@@ -37,20 +39,25 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 1;
+  margin-bottom: 30rem;
 }
 .title__sub-title--intro {
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
+  font-size: 2.3rem;
+  letter-spacing: 0.3rem;
+  color: #cc005f;
+  font-weight: 600;
 }
 .title__sub-title--name {
   font-size: 8.5rem;
   display: inline-block;
   margin: 1rem 0;
+  font-weight: 600;
 }
 .title__sub-title--specialty {
   font-family: serif;
   font-size: 1.8rem;
   font-weight: normal;
+  letter-spacing: 0.2rem;
 }
 span:nth-of-type(3) {
   padding: 0 2rem;
@@ -71,4 +78,34 @@ span:nth-of-type(4) {
   letter-spacing: 0.3rem;
   font-family: "Poppins";
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.title__button:hover {
+  border-color: #cc005f;
+  cursor: pointer;
+}
+.social-media__icons {
+  color: #eee;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 7.5rem;
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-behance,
+.fa-dribbble {
+  margin: 0 3rem;
+  transition: all 0.3s ease-in-out;
+}
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-behance:hover,
+.fa-dribbble:hover {
+  color: #cc005f;
+  cursor: pointer;
 }
