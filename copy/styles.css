@@ -2,11 +2,17 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 /* landing page  */
 /* BEM */
 /* block  element   modifier */
+/* TRBL */
 .container__landing-page {
   background-image: url("./images/intro-bg.jpg");
   background-position: bottom;
@@ -28,4 +34,41 @@
   z-index: 1;
   color: #eee;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+}
+.title__sub-title--intro {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+.title__sub-title--name {
+  font-size: 8.5rem;
+  display: inline-block;
+  margin: 1rem 0;
+}
+.title__sub-title--specialty {
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+span:nth-of-type(3) {
+  padding: 0 2rem;
+  border-left: 2px solid rgb(100, 100, 100);
+  border-right: 2px solid rgb(100, 100, 100);
+}
+span:nth-of-type(4) {
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  border-right: 2px solid rgb(100, 100, 100);
+}
+.title__button {
+  border: 3px solid rgb(100, 100, 100);
+  margin-top: 4rem;
+  padding: 1.5rem 3rem;
+  background: none;
+  color: #eee;
+  letter-spacing: 0.3rem;
+  font-family: "Poppins";
+  font-weight: 600;
 }
