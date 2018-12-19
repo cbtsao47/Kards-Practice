@@ -2,16 +2,41 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
   box-sizing: inherit;
+  /* border: 1px solid red; */
 }
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 /* nav bar */
-nav {
-  position: absolute;
+.menu {
+  position: fixed;
+  top: 0;
+  color: white;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 5rem;
+  padding: 2rem;
+}
+.menu__hamburger--bar {
+  height: 3px;
+  width: 2.5rem;
+  margin-bottom: 5px;
+  background: #cc005f;
+}
+.menu__hamburger:nth-child(1) {
+  margin-bottom: 0;
+}
+.menu__title {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: 2.3rem;
 }
 /* landing page  */
 .container__landing-page {
@@ -104,7 +129,6 @@ span:nth-of-type(4) {
 .fa-behance,
 .fa-dribbble {
   margin: 0 1.5%;
-
   transition: all 0.3s ease-in-out;
 }
 .fa-facebook-f:hover,
