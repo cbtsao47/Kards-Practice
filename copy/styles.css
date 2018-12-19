@@ -13,14 +13,16 @@ html {
 .menu {
   position: fixed;
   top: 0;
+  left: 32rem;
   color: white;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black;
   height: 5rem;
   padding: 2rem;
+  min-width: 15rem;
 }
 .menu__hamburger--bar {
   height: 3px;
@@ -37,6 +39,27 @@ html {
   font-size: 1.8rem;
   font-weight: 700;
   margin-left: 2.3rem;
+}
+.menu__open {
+  position: fixed;
+  top: -32rem;
+  left: 32rem;
+  color: #eee;
+  min-width: 18.41rem;
+  height: 37rem;
+  background: black;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+.toggle {
+  top: 5rem;
+}
+ul {
+  padding: 2rem 2rem;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3;
 }
 /* landing page  */
 .container__landing-page {
