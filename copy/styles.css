@@ -24,14 +24,28 @@ html {
   padding: 2rem;
   min-width: 15rem;
 }
+
 .menu__hamburger--bar {
   height: 3px;
   width: 2.5rem;
   margin-bottom: 5px;
   background: #cc005f;
+  transition: all 0.3s;
 }
 .menu__hamburger:nth-child(1) {
   margin-bottom: 0;
+}
+.menu__hamburger--toggle.menu__hamburger--bar:nth-child(1) {
+  transform: rotate(41deg);
+  transform-origin: 0%;
+}
+.menu__hamburger--toggle.menu__hamburger--bar:nth-child(2) {
+  opacity: 0;
+}
+.menu__hamburger--toggle.menu__hamburger--bar:nth-child(3) {
+  transform: rotate(-41deg);
+
+  transform-origin: 0%;
 }
 .menu__title {
   font-family: "Poppins", sans-serif;
