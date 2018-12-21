@@ -47,6 +47,7 @@ html {
   top: 8px;
 
   transform: rotate(41deg);
+  transition: top 0.3s, transform 0.3s 0.3s;
 }
 .menu__hamburger--toggle.menu__hamburger--bar:nth-child(2) {
   opacity: 0;
@@ -72,6 +73,17 @@ html {
   background: black;
   z-index: 2;
   transition: all 0.5s ease-in-out;
+}
+.menu__open ul li {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.menu__open ul li:hover {
+  padding-left: 2rem;
+  color: #cc005f;
+}
+.menu__open ul li:active {
+  color: #cc005f;
 }
 .toggle {
   top: 5rem;
