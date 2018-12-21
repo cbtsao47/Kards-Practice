@@ -162,6 +162,7 @@ span:nth-of-type(4) {
   font-family: "Poppins";
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+  outline-style: none;
 }
 .title__button:hover {
   border-color: #cc005f;
