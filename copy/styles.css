@@ -207,13 +207,17 @@ span:nth-of-type(4) {
   padding: 15rem 0;
   margin: 0 auto;
 }
-.about__container {
-  flex: 1 1 100%;
+.about__wrapper {
   max-width: 90rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   font-family: "poppins";
+  margin: 0 auto;
+}
+.about__container {
+  flex: 1 1 100%;
+  display: block;
 }
 .about__title--eyebrow {
   text-align: center;
@@ -245,7 +249,105 @@ span:nth-of-type(4) {
 
   line-height: 1.8;
 }
+.about__profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
 .about__profile,
 .about__skills {
-  flex: 1 1 50%;
+  max-width: 400px;
+  padding: 0 3rem;
+}
+.profile__heading {
+  font-family: "poppins";
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.profile__description {
+  font-family: "Lora";
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: rgb(110, 110, 110);
+  margin-bottom: 3rem;
+  line-height: 3rem;
+}
+.profile__list {
+  color: rgb(49, 49, 49);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-weight: 600;
+}
+.profile__list-item {
+  color: rgb(136, 136, 136);
+  font-size: 1.5rem;
+  font-family: "poppins";
+  margin-bottom: 2.1rem;
+}
+.btn__container {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile__list-bar {
+  position: relative;
+  margin-bottom: 3.7rem;
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgba(136, 136, 136);
+}
+.profile__list-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.5rem;
+  background-color: rgba(30, 30, 30, 0.8);
+}
+.profile__list-bar--1::before {
+  width: 50%;
+}
+.profile__list-bar--2::before {
+  width: 60%;
+}
+.profile__list-bar--3::before {
+  width: 70%;
+}
+.profile__list-bar--4::before {
+  width: 60%;
+}
+.profile__list-bar--5::before {
+  width: 30%;
+}
+.btn {
+  border: 3px solid rgb(30, 30, 30);
+  margin-top: 4rem;
+  padding: 1.5rem 3rem;
+  background: none;
+  color: rgb(30, 30, 30);
+  letter-spacing: 0.3rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  outline-style: none;
+  width: 23rem;
+}
+.btn:not(:last-child) {
+  margin-right: 1rem;
+}
+.btn:hover {
+  border-color: #cc005f;
+  color: #cc005f;
+  cursor: pointer;
+}
+.btn--dark {
+  background-color: rgba(30, 30, 30);
+  border-color: rgba(30, 30, 30);
+  color: #eee;
+}
+.btn--dark:hover {
+  background-color: rgba(5, 5, 5);
+  border-color: rgba(5, 5, 5);
+  color: #eee;
 }
