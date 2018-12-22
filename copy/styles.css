@@ -197,3 +197,55 @@ span:nth-of-type(4) {
   color: #cc005f;
   cursor: pointer;
 }
+
+/* about page */
+.about__page {
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15rem 0;
+  margin: 0 auto;
+}
+.about__container {
+  flex: 1 1 100%;
+  max-width: 90rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "poppins";
+}
+.about__title--eyebrow {
+  text-align: center;
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #cc005f;
+}
+.about__title {
+  text-align: center;
+  font-size: 3.6rem;
+  flex: 1 1 100%;
+  color: rgb(49, 49, 49);
+}
+.about__photo {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  /* flex: 1 1 30%; */
+}
+.about__paragraph {
+  max-width: 60%;
+  margin-left: 3rem;
+  flex: 1 1;
+  font-size: 2rem;
+  font-family: "Lora";
+  color: rgb(136, 136, 136);
+
+  line-height: 1.8;
+}
+.about__profile,
+.about__skills {
+  flex: 1 1 50%;
+}
