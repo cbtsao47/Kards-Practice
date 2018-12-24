@@ -6,3 +6,4 @@
     "compile:sass": "node-sass sass/main.scss css/styles.css",
     "watch:sass": "node-sass sass/main.scss css/styles.css -w"
 }
+}
